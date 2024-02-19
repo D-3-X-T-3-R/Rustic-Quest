@@ -1,0 +1,76 @@
+/* Basic reset for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Game board styling */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust based on your grid size */
+    gap: 5px;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* Tile styling */
+.tile {
+    width: 50px; /* Adjust based on your preference */
+    height: 50px; /* Adjust based on your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Specific tile types */
+.tile-player {
+    background-color: #4CAF50; /* Green for the player */
+}
+
+.tile-block {
+    background-color: #2196F3; /* Blue for movable blocks */
+}
+
+.tile-goal {
+    background-color: #FFEB3B; /* Yellow for the goal */
+}
+
+.tile-wall {
+    background-color: #9E9E9E; /* Grey for walls */
+}
+
+/* UI elements */
+.button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
